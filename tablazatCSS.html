@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Táblázat</title>
+</head>
+<style>
+    table {
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+
+       
+        border-collapse: collapse;
+        table-layout: fixed;
+       /* table-layout:auto;
+        width: 100%;*/
+        width: 300px;
+        height: 300px;
+        background-image: url("car.jpg");
+        background-size: 100% 100%;
+
+        caption-side: bottom;
+        
+    }
+.auto{
+    background-image: url("car.jpg");
+    background-size: 100% 100%;
+}
+    tr,
+    td {
+        border: 1px solid black;
+    }
+    .fent{
+       vertical-align: top;
+    }
+    .lent{
+        vertical-align: bottom;
+    }
+    .kozep{
+        text-align: center;
+    }
+    .jobb{
+        text-align: right;
+    }
+    .sarga{
+        background-color: yellow;
+    }
+    .piros{
+        background-color: red;
+    }
+    .kek{
+        background-color: blue;
+    }
+    .feherSzoveg{
+        color: white;
+    }
+</style>
+
+<body>
+    <table>
+        <caption><h1>Itt a cím</h1></caption>
+        <tr>
+            <td class="fent kozep">fent</td>
+            <td>bal</td>
+            <td class="lent kozep">lent</td>
+            <td class="jobb">jobb</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="fent" >balfent</td>
+           
+            <td class="kek"></td>
+            <td class="kozep kek feherSzoveg">123</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="piros"></td>
+            <td></td>
+            <td colspan="2"class="lent jobb">jobblent</td>
+             
+        </tr>
+        <tr>
+           
+            <td class="kozep sarga">456</td>
+            <td class="lent kozep auto">auto</td>
+            <td class="sarga"></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
